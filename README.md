@@ -19,10 +19,10 @@ Frontend: React.js ⚛️, CSS 🎨
 Backend (optional): Integration-ready for advanced features 🔗
 Design: Minimalist and terminal-inspired aesthetics 🎯
 📖 Usage Instructions 📖
-Clone the repository. 📂
-Run npm install to install dependencies. 🔧
-Use npm start to launch the project locally. 🏃‍♂️
-Explore the terminal by typing commands like help or about. 💡
+📂 Clone the repository.
+🔧 Run npm install to install dependencies.
+🏃‍♂️ Use npm start to launch the project locally.
+💡 Explore the terminal by typing commands like help or about.
 👨‍💻 About the Developer 👩‍💻
 Hi, I’m Wael Marwani! 👋
 
