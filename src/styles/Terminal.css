@@ -1,0 +1,212 @@
+:root {
+  --bg-primary: #0d1117; /* Background color */
+  --text-primary: #39ff14; /* Bright green text */
+  --border-color: #39ff14; /* Green border */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent page scroll */
+}
+
+.terminal-full-screen {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  max-width: 1200px; /* Limit width on larger screens */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden; /* Prevent overall terminal overflow */
+}
+
+.terminal-header {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre;
+  border-bottom: 2px solid var(--border-color);
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.terminal-output {
+  flex-grow: 1;
+  padding: 10px 20px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  font-size: 14px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  min-height: 0; /* Allow flex-grow to work correctly */
+}
+
+.output-line {
+  margin-bottom: 10px;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 2px solid var(--border-color);
+  flex-shrink: 0; /* Prevent input from shrinking */
+}
+
+.prompt {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.terminal-input input {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  flex-grow: 1;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.terminal-footer {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 12px;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For smaller tablets and large phones */
+@media (max-width: 768px) {
+  .terminal-full-screen {
+    max-width: 90%; /* Reduce width */
+    height: 95vh; /* Adjust height for small screens */
+    border-width: 1px; /* Thinner border */
+  }
+
+  .terminal-header {
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 10px; /* Reduce padding */
+  }
+
+  .terminal-output {
+    padding: 5px 10px; /* Reduce padding */
+    font-size: 12px; /* Smaller text */
+  }
+
+  .terminal-input {
+    padding: 5px 10px;
+  }
+
+  .prompt {
+    font-size: 12px; /* Smaller prompt */
+  }
+
+  .terminal-input input {
+    font-size: 12px; /* Smaller input text */
+  }
+
+  .terminal-footer {
+    font-size: 10px; /* Smaller footer text */
+  }
+}
+
+/* For very small devices (phones) */
+@media (max-width: 480px) {
+  .terminal-full-screen {
+    max-width: 95%; /* Further reduce width */
+    height: 90vh; /* Adjust height */
+  }
+
+  .terminal-header {
+    font-size: 10px; /* Further reduce font size */
+    padding: 5px; /* Minimal padding */
+  }
+
+  .terminal-output {
+    font-size: 10px; /* Tiny text */
+    padding: 5px; /* Minimal padding */
+  }
+
+  .terminal-input {
+    padding: 5px;
+  }
+
+  .prompt {
+    font-size: 10px; /* Tiny prompt text */
+  }
+
+  .terminal-input input {
+    font-size: 10px; /* Tiny input text */
+  }
+
+  .terminal-footer {
+    font-size: 8px; /* Tiny footer text */
+  }
+  .terminal-full-screen {
+    width: 100%;
+    height: 100%;
+    background-color: #0d1117;
+    color: #39ff14;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #39ff14;
+    overflow: hidden;
+  }
+  
+  .terminal-header {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 2px solid #39ff14;
+  }
+  
+  .terminal-output {
+    flex-grow: 1;
+    padding: 10px 20px;
+    overflow-y: auto; /* Enable scrolling */
+    white-space: pre-wrap;
+  }
+  
+  .output-line {
+    margin-bottom: 10px;
+  }
+  
+  .terminal-input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 2px solid #39ff14;
+  }
+  
+  .prompt {
+    margin-right: 10px;
+  }
+  
+  .terminal-input input {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    color: #39ff14;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .terminal-footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  
+}
