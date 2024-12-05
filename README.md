@@ -52,4 +52,3 @@ This portfolio reflects my journey and expertise in:
 Feel free to explore the project and reach out for any feedback or collaboration ideas! 💬
 
 ![portfolioJPG](https://github.com/user-attachments/assets/3df33e7c-aed5-432c-bc6d-01870fee44a4)
-![portfolioJPG](https://github.com/user-attachments/assets/3df33e7c-aed5-432c-bc6d-01870fee44a4)
